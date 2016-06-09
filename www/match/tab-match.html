@@ -1,0 +1,43 @@
+<ion-view view-title='Match | PetFriendly' hide-back-button="true" class="padding">
+  <ion-nav-title>
+    <img class="title-image-pic" src="../img/PetBar.jpg">
+  </ion-nav-title>
+  <ion-content>
+    <ion-list class="swipe">
+      <ion-item can swipe="true" class="item item-text-wrap" on-swipe-right="saveFavorite(pet, true)" on-swipe-left="saveFavorite(pet, false)" ng-repeat="pet in pets" ng:show="$parent.selected == $index" >
+        <h2 class="animal-name">{{pet.name.$t}}, {{pet.age.$t}}</h2>
+        <div class="list-card">
+          <div class="item item-image" ng-click="next" ng-repeat="pic in pet.media.photos.photo">
+            <img ng-src="{{pic.$t}}"  ng-click="photoNext(pet)" ng:show="$parent.photoSelected == $index">
+          </div>
+        </div>
+          <button class="button button-clear button-royal" ng-click="description = ! description">
+          Show Description
+          </button>
+          <div ng:show="description" class="item item-text-wrap">{{pet.description.$t}} <br>
+            <em>Contact Info</em> <br>
+            {{pet.contact.name.$t}} <br>
+            <a target="_blank" href="http://www.petfinder.com/petdetail/{{pet.id.$t}}">See additional information</a> <br>
+            <a href="tel:{{pet.contact.phone.$t}}">{{pet.contact.phone.$t}}</a> <br>
+            <a href="mailto:{{pet.contact.email.$t}}?subject={{pet.name.$t}}">{{pet.contact.email.$t}}</a><br>
+            {{pet.contact.address1.$t}} {{pet.contact.address2.$t}} <br>
+            {{pet.contact.city.$t}}, {{pet.contact.state.$t}} {{pet.contact.zip.$t}} <br>
+          </div><br>
+          <div class="row">
+            <div class="col text-center">
+              <button class=" btn-no button button-large button-royal" ng-click="saveFavorite(pet, false)">
+                No
+              </button>
+              <button class="button button-large button-royal" ng-click="saveFavorite(pet, true)">
+                Yes
+              </button>
+            </div>
+          </div>
+      </ion-item>
+    </ion-list>
+  </ion-content>
+  <br><br>
+    <h1 class="alert-style">{{alert}}</h1>
+  </div>
+</ion-view>
+

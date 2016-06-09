@@ -1,0 +1,141 @@
+/* colors
+Off White - #fffcf7
+Dark Purple - #886aea
+Light Purple - #e1e1fb
+*/
+
+
+
+
+$font-family-base: "Open-Sans", sans-serif !default;
+$base-background-color:           #fffcf7 !default;
+$content-padding:                 20px !default;
+$grid-padding-width:              20px !default;
+$button-margin-top:               1px !default;
+$button-clear-font-size:          16px !default;
+$button-font-size:                20px !default;
+$item-button-font-size:           18px !default;
+$bar-height:                      61px !default;
+$button-icon-size:                20px !default;
+$card-margin:                     50px !default;
+$bar-title-shadow:                17px !default;
+$bar-title-font-size:             22px !default;
+$list-margin:                     20px !default;
+$card-border-width:               1px !default;
+$royal:                           #886aea !default;
+$button-padding:                  50px !default;
+$stable:                          #e1e1fb !default;
+$font-size:                       25px !default;
+
+$ionicons-font-path: "../lib/ionic/fonts" !default;
+
+/* custom styles */
+
+label.item.item-input.item-select {
+  padding: 20px;
+  font-size: 15px;
+}
+
+label.item.item-input {
+  padding: 20px;
+  font-size: 15px;
+}
+
+.ion-item {
+  background-color: #fffcf7;
+}
+
+.padding {
+  margin: 0 2px;
+}
+
+div.col.text-center {
+  width: 100%;
+  vertical-align: middle;
+}
+
+button.wide-btn {
+  width: 90%;
+  display: block;
+  margin: auto;
+}
+
+button.button-large {
+  padding-left: 40px;
+  padding-right: 40px;
+}
+
+button.btn-no {
+  padding-left: 44px;
+  padding-right: 44px;
+}
+
+button.button-clear {
+  margin-left: 4%;
+  font-size: 16px;
+}
+
+button.del-btn {
+  margin-top: 20px;
+}
+
+h2.favorites.ng-binding {
+  margin-top: 15px;
+}
+
+p.italic.ng-binding {
+  font-style: italic;
+}
+
+img.title-image-pic {
+  padding-top: 8px;
+  text-align: left;
+}
+
+div.item.item-text-wrap.ng-binding {
+  margin-top: 14px;
+}
+
+div.alert-style.ng-binding {
+  font-size: 15px;
+  font-family: 'Open Sans', sans-serif;
+  margin-bottom: 5px;
+  background-color: #fffcf7;
+}
+
+h1.alert-style.ng-binding {
+  font-size: 20px;
+  font-family: 'Open Sans', sans-serif;
+  margin-top: 10px;
+  font-style: center;
+  background-color: #fffcf7;
+}
+
+div.item.item-text-wrap {
+  border: 0;
+}
+
+img.item-avatar {
+  max-height: 50px;
+  max-width: 50px;
+
+}
+
+.item-image img:first-child, .item-image .list-img {
+  margin: 1px;
+}
+
+.ion-content.padding.scroll-content.ionic-scroll.has-header {
+  padding: 50px;
+}
+
+.scroll h2.animal-name {
+  font-size: 30px;
+  font-family: 'Open Sans', sans-serif;
+}
+
+
+@import url(https://fonts.googleapis.com/css?family=Open+Sans:600);
+
+@import "www/lib/ionic/scss/ionic";
+
